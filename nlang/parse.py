@@ -1,4 +1,4 @@
-
+#
 # read in lines between paragraph mark (blank line)
 # skip lines that are markup
 # trim and join
