@@ -8,11 +8,11 @@ echo "picking out words"
 awk -f MATCH.awk tvs | uniq > words.wpos
 egrep '#n' words.wpos | awk '{ print $1 }' | sort | uniq > words.nouns
 grep '#vv' words.wpos | awk '{ print $1 }' | sort | uniq > words.verbs
-grep '#aa' words.wpos | awk '{ print $1 }' | sort | uniq > words.adjectives
-grep '#rr' words.wpos | awk '{ print $1 }' | sort | uniq> words.adjectives  # interrogative adverb
+grep '#aa' words.wpos | awk '{ print $1 }' | sort | uniq > words.adverbs
+grep '#rr' words.wpos | awk '{ print $1 }' | sort | uniq> words.adverbs  # interrogative adverb
 grep '#p' words.wpos | awk '{ print $1 }' | sort | uniq > words.pronouns
 grep '#at' words.wpos | awk '{ print $1 }' | sort | uniq > words.articles
-grep '#jj' words.wpos | awk '{ print $1 }' | sort | uniq > words.adverbs
+grep '#jj' words.wpos | awk '{ print $1 }' | sort | uniq > words.adjectives
 grep '#cc' words.wpos | awk '{ print $1 }' | sort | uniq > words.conjunctions
 grep '#cs' words.wpos | awk '{ print $1 }' | sort | uniq > words.conjunctions
 grep '#ii' words.wpos | awk '{ print $1 }' | sort | uniq > words.prepositions
