@@ -1,0 +1,47 @@
+# sentence / who (noun+mods) / what (verb+mods) / with/as/in/... (object) / ibid
+# if fewer than full number are specified, all but ibid are zeroes and ibid is 1-n
+I am / 1 / 2 
+my mother is / 1 2 / 3
+my sainted mother is / 1 2 3 / 4
+my mother is not / 1 2 / 3 4
+my sainted mother is not / 1 2 3 / 4 5 
+my mother is not here / 1 2 / 3 4 / 5
+my sainted mother is not here / 1 2 3 / 4 5 / 6
+I am here / 1 / 2 / 3
+I am not here / 1 / 2 / 3 4
+I am here and there / 1 / 2 / 3 4 5
+I am not here and there / 1 / 2 3 / 4 5 6
+jean and I are / 1 2 3 / 4
+my mother jean and I are / 1 2 3 4 5 / 6
+my mother jean and I are here / 1 2 3 4 5 / 6 / 7
+my mother jean and I are not here / 1 2 3 4 5 / 6 7 / 8
+my sainted mother jean and I are not here / 1 2 3 4 5 6 / 7 8 / 9
+jean and I are here / 1 2 3 / 4 / 5
+jean and I are not here / 1 2 3 / 4 5 / 6
+jean mark and I are / 1 2 3 4 / 5
+jean mark and I are here / 1 2 3 4 / 5 / 6
+jean mark and I are not here / 1 2 3 4 / 5 6 / 7
+you go quickly / 1 / 2 3 
+jean and I go quickly / 1 2 3 / 4 5
+jean mark and I go quickly / 1 2 3 4 / 5 6 
+you go to the store / 1 / 2 / 3 4 5
+you go with me to the store / 1 / 2 / 3 4 5 6 7 
+you and I go / 1 2 3 / 4 / 0 / 0
+you and I go to the store / 1 2 3 / 4 / 5 6 7 / 0
+you and I go quickly and quietly to the store / 1 2 3 / 4 5 6 7 / 8 9 10
+they go to the toy store / 1 / 2 / 3 4 5 6
+they go to the toy and hardware store / 1 / 2 / 3 4 5 6 7 8 9
+you and I go to the hardware store / 1 2 3 / 4 / 5 6 7 8 
+you and I go to the toy and hardware store / 1 2 3 / 4 / 5 6 7 8 9 10
+you and I go quickly to the toy store / 1 2 3 / 4 5 / 6 7 8
+you and I go quickly and quietly to the hardware store / 1 2 3 / 4 5 6 7 / 8 9 10
+you and I go quickly and quiestly to the toy and hardware store / 1 2 3 / 4 5 6 7 / 8 9 10 11 12 13
+you and I go quickly and quiestly to the red toy and hardware store / 1 2 3 / 4 5 6 7 / 8 9 10 11 12 13 14
+you and I go quickly quiestly and stealthily to the red toy and hardware store / 1 2 3 / 4 5 6 7 8 / 9 10 11 12 13 14 15
+you and I and jean go quickly quiestly and stealthily to the red toy and hardware store / 1 2 3 4 5 / 6 7 8 9 10  / 11 12 13 14 15 16 17
+# will have to think more about how to do compound sentences
+# I go to the store and to the bank / 1 / 2 / 3 4 5 6 1 2 7 8 9 / 1 2 3 4 5 6 1 2 7 8 9
+# you and I go to the store and to the bank / 1 2 3 / 4 / 5 6 7 8 1 2 3 4 9 10 11
+# you and I go to the store and to the bank branch / 1 2 3 / 4 / 5 6 7 8 1 2 3 4 9 10 11 12
+# you and I go quickly to the store and to the bank / 1 2 3 / 4 5 / 6 7 8 9 1 2 3 4 9 10 11 12
+# you and I go quickly to the store and to the bank branch / 1 2 3 / 4 5 / 6 7 8 9 1 2 3 4 9 10 11 12
